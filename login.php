@@ -30,7 +30,7 @@
                 <input type="checkbox" name="" id="">
                 Recuerdame la contraseña
                </label>
-               <a href="#">¿Olvidaste la contraseña?</a>
+               <a href="#">¿Recuperar la contraseña?</a>
             </div>
         
             <button type="submit" class="boton">Acceder</button>
