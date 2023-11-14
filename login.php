@@ -10,6 +10,9 @@
 
 </head>
 <body>
+<video src="backgroundvideo.mp4" id="video-background" autoplay muted loop>
+    
+  </video>
     <div class="login">
         <form action="submit">
             <h1>Acceder al área cliente</h1>
@@ -19,7 +22,7 @@
             </div>
             <div class="caja-texto">
                 <input type="password" placeholder="Contraseña">
-                <i class='bx bxs-lock bx-flip-vertical bx-tada' style='color:#00e3cc'  ></i>
+                <i class='bx bxs-lock bx-flip-vertical bx-tada' style='color:#00e3cc'></i>
             </div>
 
             <div class="Recuerda-password">
