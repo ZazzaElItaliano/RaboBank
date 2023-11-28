@@ -12,7 +12,7 @@
 <video src="backgroundvideo.mp4" id="video-background" autoplay muted loop> </video>
 <div class="envoltorio">
     <form action="">
-        <h1>Regístro</h1>
+        <h1>Registro</h1>
         <div class="formulario-caja">
             <div class="formulario-campos">
                 <input type="text" placeholder="Nombre" required>
@@ -32,7 +32,7 @@
             </div>
             <div class="formulario-campos">
                 <input type="date" placeholder="Fecha nacimiento">
-                <i class='bx bxs-cake bx-tada' style='color:#00e3cc' ></i>
+               
             </div>
             <div class="formulario-campos">
                 <input type="text" placeholder="Dirección">
@@ -65,7 +65,7 @@
             <label for=""><input type="checkbox"><a href="https://www.bancsabadell.com/cmi/CMI_es.pdf">He aceptado los términos y condiciones</a></label>
 
             <button type="submit" class="boton-registro"> Registrarme</button>          
-              <a href="login.php" id="cuenta">¿Ya tienes una cuenta?. Accede aquí</a>
+              <p class="acceso">¿Ya tienes una cuenta?</p> <a href="login.php" id="cuenta">Accede aquí</a>
         </div>
             
     </form>
