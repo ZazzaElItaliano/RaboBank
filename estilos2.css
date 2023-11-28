@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+main {
+    scroll-snap-type: y mandatory;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+section {
+    scroll-snap-align: start;
+    height: 100vh;
+}
+
+
+
+.red{
+    background-color:red;
+}
+
+.blue{
+    background-color:blue;
+}
+
+.yellow{
+    background-color:yellow;
+}
