@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+.login{
+
+    width: 420px;
+    color: rgb(0, 255, 255);
+    border-radius: 10px;
+    padding: 30px 40px;
+
+background: rgba(20, 246, 209, 0.22);
+border-radius: 16px;
+box-shadow: 20px 10px 12px 9px rgb(5, 231, 243);
+backdrop-filter: blur(8.2px);
+-webkit-backdrop-filter: blur(8.2px);
+border: 1px solid rgba(20, 246, 209, 1);
+ 
+
+}
+
+.login:hover{
+    backdrop-filter: blur(25px);
+    background-color: rgba(25, 44, 44, 0.236);
+}
+
+.login h1{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.login .caja-texto{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    
+}
+.caja-texto input:hover{
+    background-color:rgba(127, 255, 212, 0.537);
+border:2px solid rgb(43, 226, 211);
+}
+
+.caja-texto input{
+    width: 100%;
+    height:100%;
+    background-color: transparent;
+    border: none;
+    outline:none ;
+    border-radius: 40px;
+    font-size: 17px;
+    border: 4px solid  rgb(0, 255, 255);
+    color: rgb(0, 255, 145);
+    padding: 20px 45px 20px 20px;
+}
+
+.caja-texto input::placeholder{
+    color:rgb(255, 255, 255);
+}
+
+.caja-texto i{
+   position: absolute; 
+   right: 20px;
+   top: 30%;
+   transform: translateY(-50%);
+   font-size: 20px;
+}
+
+.login .Recuerda-password{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: -15px 0 15px;
+}
+
+.Recuerda-password label input {
+    accent-color: black;
+    margin-right: 3px;
+}
+
+.Recuerda-password a{
+    color:rgb(76, 237, 165);
+    text-decoration: none;
+   
+   
+}
+
+.Recuerda-password a:hover{
+    border-bottom: 2px solid rgb(46, 185, 189);
+}
+
+.login .boton{
+
+    width: 100%;
+    height: 30px;
+    background-color:rgba(255, 255, 255, 0.915);
+    border-width:2.5px;
+    outline:none;
+    border-radius:40px;
+    box-shadow: 0px 0px 18px 2px rgba(0, 255, 187, 0.468);
+    font-size: 16px;
+    color:rgb(35, 30, 30);
+    font-weight: 640;
+}
+
+.login .boton:hover{
+    background-color:rgba(127, 255, 212, 0.537);
+    color:rgb(135, 66, 66);
+    border:2px solid rgb(43, 226, 211)
+}
+
+.registro{
+    font-size: 14px;
+    text-align:center;
+    margin-top: 18px ;
+}
+
+.registro p a{
+    color:rgb(76, 237, 165);
+    text-decoration: none;
+    font-weight: 640;
+}
+
+.registro a:hover{
+    border-bottom: 2px solid rgb(46, 185, 189);
+}
+
+
+video{
+   position: absolute; 
+   width:100%;
+   height:100%;
+   object-fit: cover;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+
+.envoltorio{
+    width: 750px;
+    background: rgba(20, 246, 209, 0.22);
+   
+    border: 1px solid rgba(20, 246, 209, 1) ;
+    box-shadow: 20px 10px 12px 9px rgb(5, 231, 243);
+    border-radius: 2em;
+    color:white;
+    padding: 40px 35px 55px;
+    margin: 0 150px;
+    transition: 0.6s ease;
+    backdrop-filter: blur(8.2px);
+
+
+}
+
+.envoltorio:hover{
+    backdrop-filter: blur(25px);
+    background-color: rgba(25, 44, 44, 0.236);
+}
+
+.envoltorio h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.envoltorio .formulario-caja{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.formulario-caja .formulario-campos{
+    position: relative;
+    width: 48%;
+    height: 50px;
+    margin:13px 0 ;
+    
+}
+.formulario-caja .formulario-campos input{
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    border: 4px solid  rgb(0, 255, 255);
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    color:white;
+    border-radius: 40px;
+    padding: 15px 15px 15px 40px;
+
+}
+
+.formulario-caja .formulario-campos input::placeholder{
+    color:rgb(255, 255, 255);
+}
+
+.formulario-caja .formulario-campos i{
+    position: absolute; 
+    right: 20px;
+    top: 30%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.formulario-campos input:hover{
+    background-color:rgba(127, 255, 212, 0.537);
+    border:2px solid rgb(43, 226, 211)
+}
+
+
+.envoltorio label{
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0 23px;
+  
+}
+
+
+
+.envoltorio .boton-registro{
+    width: 100%;
+    height: 30px;
+    background-color:rgba(255, 255, 255, 0.915);
+    border-width:2.5px;
+    outline:none;
+    border-radius:40px;
+    box-shadow: 0px 0px 18px 2px rgba(0, 255, 187, 0.468);
+    font-size: 16px;
+    color:rgb(35, 30, 30);
+    font-weight: 640;
+}
+
+.envoltorio .boton-registro:hover{
+    background-color:rgba(127, 255, 212, 0.537);
+    color:rgb(135, 66, 66);
+    border:2px solid rgb(43, 226, 211)
+}
+
+.envoltorio input{
+    transition: 0.3s ease;
+}
+
+
+
+#cuenta{
+    color:rgb(76, 237, 165);
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+@media (max-width: 576px){
+    .formulario-caja .formulario-campos{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.acceso{
+    color:rgb(0, 247, 255);
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
