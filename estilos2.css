@@ -1,6 +1,14 @@
-body{
+*{
+    padding: 0;
+    font-family: 'Nova Square', sans-serif;
     margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
 }
+
+
+
 
 main {
     scroll-snap-type: y mandatory;
@@ -15,14 +23,43 @@ section {
 
 
 
-.red{
-    background-color:red;
+.seccion1{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 84.39% 37.48%, #ffaa70 0, #ff9c7b 8.33%, #ff8e83 16.67%, #ff7f8a 25%, #ff708d 33.33%, #ff618d 41.67%, #f25389 50%, #d34683 58.33%, #b83d7d 66.67%, #9f3678 75%, #893174 83.33%, #762e71 91.67%, #662d6f 100%);
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 0 19%;
+    }
+
+    .saludo h1{
+        font-size: 6vh;
+        line-height: 1.3;
+        margin:0 0 45px ;
+    }
+
+    .saludo h2{
+        font-size: 4vh;
+        margin-bottom: 20px;
+        font-weight:500;
+    }
+
+    .logoBanco img{
+        
+    }
+.seccion2 {
+    background: linear-gradient(blue, pink);
 }
 
-.blue{
-    background-color:blue;
+.seccion2 h1{
+    text-align: center;
+    font-size: 6vh;
+    padding-top: 1.4em;
 }
-
 .yellow{
     background-color:yellow;
 }
