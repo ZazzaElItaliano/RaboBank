@@ -77,9 +77,28 @@
 
 
 
-    <section class="yellow">
-        <p>perenne</p>
+    <section class="seccion3">
+      <div class="hola"><h1>holaaaa</h1></div>
+        <ul class="menu">
+            <div class="boton"><ion-icon name="add-outline"></ion-icon></div>
+            <li style="--i:0;--clr:#ff2972;">
+             <a><ion-icon name="person-outline"></ion-icon></a>
+            </li>
+            <li  style="--i:1;--clr:#fee800;">
+            <a><ion-icon name="card-outline"></ion-icon></a>
+            </li>
+            <li  style="--i:2;--clr:#04fc43;">
+            <a><ion-icon name="chatbubbles-outline"></ion-icon></a>
+            </li>
+            <li  style="--i:3;--clr:#fe00f1;">
+            <a><ion-icon name="cash-outline"></ion-icon></a>
+            </li>
+        </ul>
+        <script src="JS/menuRadial.js"> </script>
     </section>
     </main>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 </html>

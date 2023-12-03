@@ -2,9 +2,7 @@
     padding: 0;
     font-family: 'Nova Square', sans-serif;
     margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    
+    box-sizing: border-box;  
 }
 
 
@@ -27,7 +25,7 @@ section {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background-image: radial-gradient(circle at 84.39% 37.48%, #ffaa70 0, #ff9c7b 8.33%, #ff8e83 16.67%, #ff7f8a 25%, #ff708d 33.33%, #ff618d 41.67%, #f25389 50%, #d34683 58.33%, #b83d7d 66.67%, #9f3678 75%, #893174 83.33%, #762e71 91.67%, #662d6f 100%);
+    background-image: linear-gradient(230deg, #7f704d 0, #7f6a46 8.33%, #7f6440 16.67%, #7e5d39 25%, #7e5533 33.33%, #7d4c2d 41.67%, #7b4227 50%, #793823 58.33%, #772d21 66.67%, #762220 75%, #741621 83.33%, #720623 91.67%, #6f0027 100%);
     display: grid;
     position: relative;
     grid-template-columns: repeat(2,1fr);
@@ -40,12 +38,14 @@ section {
         font-size: 6vh;
         line-height: 1.3;
         margin:0 0 45px ;
+        color: #d5dcdc;
     }
 
     .saludo h2{
         font-size: 4vh;
         margin-bottom: 20px;
         font-weight:500;
+        color: #d5dcdc;
     }
 
     .logoBanco img{
@@ -183,20 +183,85 @@ section {
     transform: rotateY(-180deg); 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.yellow{
-    background-color:yellow;
+.seccion3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(185deg, #666249 0, #62593c 16.67%, #5e502e 33.33%, #59451f 50%, #553a11 66.67%, #512f03 83.33%, #4f2500 100%);
 }
+
+.seccion3 .hola{
+    
+}
+.menu{
+    position:relative;
+    width:280px ;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transition: 0.5s;
+    transition-delay:calc(0.2s * var(--i));
+    transform-origin: 140px;
+
+    transform: rotate(0deg) translateX(110px);
+}
+
+.menu.active li{
+    transform: rotate(calc(360deg / 4 * var(--i) )) 
+    translateX(0px);
+}
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    color:var(--clr) ;
+    border: 2px solid var(--clr);
+    border-radius:50% ;
+    font-size: 2.5em;
+    transform: rotate(calc(360deg / -4 * var(--i) )) 
+}
+
+.menu li a:hover{
+    background: var(--clr);
+    color: #333;
+    box-shadow:2px 5px 30px 10px var(--clr);
+}
+.menu .boton{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: #2f363e;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10000;
+    font-size: 3.5em;
+    transition: transform 1.25s;
+}
+
+.menu.active .boton{
+    transform: rotate(315deg);
+}
+
+
+
+
+
+
 
 /* Resto del CSS ... */
 
