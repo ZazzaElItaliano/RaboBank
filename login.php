@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
     <title>BancoRabo-login</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="CSS/estilosACCESO.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
-<video src="backgroundvideo.mp4" id="video-background" autoplay muted loop>
+<video src="fotos/backgroundvideo.mp4" id="video-background" autoplay muted loop>
     
   </video>
     <div class="login">

@@ -6,10 +6,10 @@
     <link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
     <title>BancoRabo-login</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="CSS/estilosACCESO.css">
 </head>
 <body>
-<video src="backgroundvideo.mp4" id="video-background" autoplay muted loop> </video>
+<video src="fotos/backgroundvideo.mp4" id="video-background" autoplay muted loop> </video>
 <div class="envoltorio">
     <form action="">
         <h1>Registro</h1>

@@ -1,6 +1,6 @@
 let usarh2=document.getElementById("fechaHora");
 let tiempo= new Date();
-var opcionesFecha = { weekday: 'long', 
+let opcionesFecha = { weekday: 'long', 
                       year: 'numeric', 
                       month: 'long', 
                       day: 'numeric' };
@@ -8,5 +8,5 @@ var opcionesFecha = { weekday: 'long',
 
 let fecha= tiempo.toLocaleDateString("es-ES" , opcionesFecha);
 let hora= tiempo.toLocaleTimeString();
-let fechahora= "La fecha es: " + fecha + " y la hora es: " + hora;
+let fechahora= "Hoy es: " + fecha + " y la hora es: " + hora;
 usarh2.innerHTML=fechahora;
