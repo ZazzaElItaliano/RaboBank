@@ -16,10 +16,10 @@
     <div class="login">
         <form action="submit">
             <h1>Acceder al área cliente</h1>
-            <div class="caja-texto">
+           <!-- <div class="caja-texto">
                 <input type="text" placeholder="Nombre">
                 <i class='bx bxs-user bx-tada' style='color:#00e3cc'></i>
-            </div>
+            </div>-->
             <div class="caja-texto">
                 <input type="text" placeholder="DNI">
                 <i class='bx bx-id-card bx-tada' style='color:#00e3cc' ></i>
