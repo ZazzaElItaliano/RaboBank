@@ -15,14 +15,10 @@
   </video>
     <div class="login">
         <form action="submit">
-            <h1>Acceder al área cliente</h1>
+            <h1>Acceso administrador</h1>
             <div class="caja-texto">
-                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Usuario">
                 <i class='bx bxs-user bx-tada' style='color:#00e3cc'></i>
-            </div>
-            <div class="caja-texto">
-                <input type="text" placeholder="DNI">
-                <i class='bx bx-id-card bx-tada' style='color:#00e3cc' ></i>
             </div>
             <div class="caja-texto">
                 <input type="password" placeholder="Contraseña">
@@ -34,17 +30,12 @@
                 <input type="checkbox" name="" id="">
                 Recuerdame la contraseña
                </label>
-               <a href="loginAdmin.php">¿Administrador? accede</a>
+               <a href="login.php">Acceso usuario</a>
             </div>
         
             <button type="submit" class="boton">Acceder</button>
         
-            <div class="registro">
-
-            <p>¿Eres nuevo? <a href="registros.php" >Regístrate</a></p>
-
-            </div>
-        
+            
         
         
         
