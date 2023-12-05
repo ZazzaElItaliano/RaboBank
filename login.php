@@ -1,3 +1,6 @@
+<?php  include("Consultas/mantenerSesion.php") ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,18 +17,15 @@
     
   </video>
     <div class="login">
-        <form action="submit">
+        <form action="Consultas/loginComprobar.php" method="POST">
             <h1>Acceder al área cliente</h1>
-           <!-- <div class="caja-texto">
-                <input type="text" placeholder="Nombre">
-                <i class='bx bxs-user bx-tada' style='color:#00e3cc'></i>
-            </div>-->
+           
             <div class="caja-texto">
-                <input type="text" placeholder="DNI">
+                <input type="text" placeholder="DNI" name="dni">
                 <i class='bx bx-id-card bx-tada' style='color:#00e3cc' ></i>
             </div>
             <div class="caja-texto">
-                <input type="password" placeholder="Contraseña">
+                <input type="password" placeholder="Contraseña" name="contrasena">
                 <i class='bx bxs-lock bx-flip-vertical bx-tada' style='color:#00e3cc'></i>
             </div>
 
