@@ -1,35 +1,20 @@
 <?php 
+function DniExiste($dni, $conexion) {
+ 
+    $consultaExistencia = "SELECT COUNT(*) as count FROM usuario WHERE dni = '$dni'";
+    $resultadoConsulta = mysqli_query($conexion, $consultaExistencia);
+    $fila = mysqli_fetch_assoc($resultadoConsulta);
+    $contador = $fila['count'];
 
-$nombre="alejandro";
-$longitud=strlen($nombre);
-$iban="";
+    return $contador > 0;
+}
 
-if($longitud>=4){
-    for($i=1; $i<=4; $i++){
-    
-        $binario=decbin($i);
-       $iban.=$binario;
+function avisoDni($dni, $conexion){
+    if(DniExiste($dni, $conexion)){
+        echo "Dni ya existente escoja otro";
     }
-    
-}elseif($longitud<4){
-    $nombreConvertido=str_pad($nombre,4,'z');
-    
 }
 
+$dniComprobado=avisoDni($dni, $conexion);
 
-
-
-
-
-
-
-
-
-for($i=1; $i<=4; $i++){
-    
-    $binario=decbin($i);
-   $iban.=$binario;
-}
-
-echo $iban;
 ?>
