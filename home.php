@@ -20,7 +20,7 @@ include("Consultas/noEvadirLogin.php");
     <main>
     <section class="seccion1">
         <div class="saludo">
-            <h1>Hola [aqui meter usuario], nos agrada verte de nuevo</h1>
+            <h1>Hola <?php include("Consultas/saludarUsuario.php")?>, nos agrada verte de nuevo</h1>
             <h2 id="fechaHora"></h2>
             <script src="JS/fecha.js"> </script>
         </div>
@@ -43,17 +43,15 @@ include("Consultas/noEvadirLogin.php");
                         <img src="fotos/visa.png" width="90px">
                     </div>
                     <div class="filaFotos numero-tarjeta">
-                        <p>2345</p>
-                        <p>5354</p>
-                        <p>0928</p>
-                        <p>3287</p>
+                        <p><?php include("Consultas/obtenerIban.php")?></p>
+                        
                     </div>
                     <div class="filaFotos nombre-validez">
                         <p>TITULAR</p>
                         <P>VALIDEZ</P>
                     </div>
                     <div class="filaFotos datos">
-                        <p>[aqui nombre user logueado]</p>
+                        <p><?php include("Consultas/saludarUsuario.php")?></p>
                         <p>11/24</p>
                     </div>
                 </div>
@@ -64,7 +62,7 @@ include("Consultas/noEvadirLogin.php");
                     <div>
                         <img src="fotos/pattern.png">
                     </div>
-                    <p>[meter iban]</p>
+                    <p>272</p>
                 </div>
                 
                 <div class="filaFotos firma">

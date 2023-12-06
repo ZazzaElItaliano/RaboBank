@@ -129,6 +129,7 @@ section {
 }
 
 .numero-tarjeta{
+    font-weight: bold;
     font-size:3vh;
     margin-top:6.29vh ;
 }
