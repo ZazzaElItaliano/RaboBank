@@ -25,7 +25,7 @@ include("Consultas/noEvadirLogin.php");
             <script src="JS/fecha.js"> </script>
         </div>
         <div class="logoBanco">
-            <img src="fotos/LOGODEF.svg">
+        <?php include("Consultas/foto_defecto.php") ?>
         </div>
     </section>
 
@@ -84,7 +84,7 @@ include("Consultas/noEvadirLogin.php");
         <ul class="menu">
             <div class="boton"><ion-icon name="add-outline"></ion-icon></div>
             <li style="--i:0;--clr:#ff2972;">
-             <a><ion-icon name="person-outline"></ion-icon></a>
+             <a href="perfil.php"><ion-icon name="person-outline"></ion-icon></a>
             </li>
             <li  style="--i:1;--clr:#fee800;">
             <a><ion-icon name="card-outline"></ion-icon></a>
