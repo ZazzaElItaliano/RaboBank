@@ -1,20 +1,25 @@
 <?php 
-function DniExiste($dni, $conexion) {
- 
-    $consultaExistencia = "SELECT COUNT(*) as count FROM usuario WHERE dni = '$dni'";
-    $resultadoConsulta = mysqli_query($conexion, $consultaExistencia);
-    $fila = mysqli_fetch_assoc($resultadoConsulta);
-    $contador = $fila['count'];
+session_start();
+include("conexion.php");
+$dni = $_SESSION['dni']; 
 
-    return $contador > 0;
+// Obtener el ID de la cuenta asociada al usuario
+$obtenerID = "SELECT id_cuenta FROM cuenta WHERE dni='$dni'";
+$sacarID = mysqli_query($conexion, $obtenerID);
+$idObtenido = mysqli_fetch_assoc($sacarID);
+$almacenarId = $idObtenido['id_cuenta'];
+
+// Consulta para obtener los movimientos asociados a la cuenta del usuario
+$consultaMovimientos = "SELECT * FROM movimiento WHERE id_cuenta = $almacenarId";
+$resultadoMovimientos = mysqli_query($conexion, $consultaMovimientos);
+
+// Mostrar los movimientos
+while ($movimiento = mysqli_fetch_assoc($resultadoMovimientos)) {
+    echo "Concepto: " . $movimiento['concepto'] . "<br>";
+    echo "Cantidad: " . $movimiento['cantidad'] . "<br>";
+    echo "Fecha: " . $movimiento['fecha'] . "<br>";
+    echo "Hora: " . $movimiento['hora'] . "<br>";
+    echo "-----------------------------<br>";
 }
-
-function avisoDni($dni, $conexion){
-    if(DniExiste($dni, $conexion)){
-        echo "Dni ya existente escoja otro";
-    }
-}
-
-$dniComprobado=avisoDni($dni, $conexion);
 
 ?>

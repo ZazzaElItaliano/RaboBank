@@ -15,11 +15,12 @@
     <div class="row">
         <!-- Menú lateral -->
         <div class="col-md-3">
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">Ver Movimientos</a>
-            </div>
-        </div>
-
+    <div class="list-group">
+        <a href="mostrarMov.php" class="list-group-item list-group-item-action">Ver Movimientos</a>
+        <a href="home.php" class="list-group-item list-group-item-action">Volver al Menú principal</a>
+    </div>
+</div>
+    
         <!-- Contenido principal -->
         <div class="col-md-9">
             <div class="saldo-container">
@@ -51,12 +52,12 @@
                    
                     <div class="form-group">
                         <label for="asunto">Asunto:</label>
-                        <input type="text" class="form-control" id="asunto" placeholder="Ingrese el asunto">
+                        <input type="text" class="form-control" name="asunto" placeholder="Ingrese el asunto" required>
                     </div> 
                     
                     <div class="form-group">
                         <label for="cantidad">Cantidad:</label>
-                        <input type="number" class="form-control" id="cantidad" name="cantidad"   step="0.01" placeholder="Ingrese la cantidad">
+                        <input type="number" class="form-control" id="cantidad" name="cantidad"   step="0.01" placeholder="Ingrese la cantidad" required>
                     </div>
 
 

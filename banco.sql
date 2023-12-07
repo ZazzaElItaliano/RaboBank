@@ -59,4 +59,4 @@ select * from usuario;
 select * from cuenta;
 insert into usuario (nombre,dni,contrasena) values ('admin', '111111111Q','admin');
 
-
+select* from movimiento;
