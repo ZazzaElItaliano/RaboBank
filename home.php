@@ -87,7 +87,7 @@ include("Consultas/noEvadirLogin.php");
              <a href="perfil.php"><ion-icon name="person-outline"></ion-icon></a>
             </li>
             <li  style="--i:1;--clr:#fee800;">
-            <a><ion-icon name="card-outline"></ion-icon></a>
+            <a href="cajeroAutomatico.php"><ion-icon name="card-outline"></ion-icon></a>
             </li>
             <li  style="--i:2;--clr:#04fc43;">
             <a><ion-icon name="chatbubbles-outline"></ion-icon></a>

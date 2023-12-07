@@ -38,11 +38,10 @@ foreign key (id_cuenta) references  cuenta(id_cuenta)
   
 create table movimiento(
 id_movimiento int auto_increment primary key,
-concepto varchar(50),
-transaccion float,
-cuenta_origen varchar(120),
-cuenta_destino varchar(120),
-asunto varchar(30),
+concepto varchar(30),
+cantidad DECIMAL(10, 2),
+fecha DATE,
+hora TIME,
 id_cuenta int,
 foreign key (id_cuenta) references  cuenta(id_cuenta)
 );
@@ -58,5 +57,6 @@ foreign key (dni) references  usuario(dni)
  
 select * from usuario;
 select * from cuenta;
+insert into usuario (nombre,dni,contrasena) values ('admin', '111111111Q','admin');
 
 

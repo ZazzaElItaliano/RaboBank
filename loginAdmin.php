@@ -1,3 +1,4 @@
+<?php  include("Consultas/mantenerSesionAdmin.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,17 +15,16 @@
     
   </video>
     <div class="login">
-        <form action="submit">
+        <form action="Consultas/accesoAdmin.php" method="post">
             <h1>Acceso administrador</h1>
             <div class="caja-texto">
-                <input type="text" placeholder="Usuario">
-                <i class='bx bxs-user bx-tada' style='color:#00e3cc'></i>
+                <input type="text" placeholder="DNI" name="dni">
+                <i class='bx bx-id-card bx-tada' style='color:#00e3cc' ></i>
             </div>
             <div class="caja-texto">
-                <input type="password" placeholder="Contraseña">
+                <input type="password" placeholder="Contraseña" name="contrasena">
                 <i class='bx bxs-lock bx-flip-vertical bx-tada' style='color:#00e3cc'></i>
             </div>
-
             <div class="Recuerda-password">
                <label for="">
                 <input type="checkbox" name="" id="">
