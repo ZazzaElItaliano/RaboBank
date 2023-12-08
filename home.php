@@ -93,7 +93,7 @@ include("Consultas/noEvadirLogin.php");
             <a><ion-icon name="chatbubbles-outline"></ion-icon></a>
             </li>
             <li  style="--i:3;--clr:#fe00f1;">
-            <a><ion-icon name="cash-outline"></ion-icon></a>
+            <a href="pedirPrestamo.php"><ion-icon name="cash-outline"></ion-icon></a>
             </li>
         </ul>
         <script src="JS/menuRadial.js"> </script>
