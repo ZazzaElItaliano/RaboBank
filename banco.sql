@@ -28,6 +28,7 @@ foreign key (dni ) references  usuario(dni )
 
 create table prestamos(
 id_prestamo int auto_increment primary key,
+estado varchar(20),
 concepto varchar(50),
 cantidad float,
 interes varchar(50),
@@ -35,7 +36,7 @@ plazo varchar(50),
 id_cuenta int,
 foreign key (id_cuenta) references  cuenta(id_cuenta)
 );
-  
+
 create table movimiento(
 id_movimiento int auto_increment primary key,
 concepto varchar(30),
