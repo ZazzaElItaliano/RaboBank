@@ -141,7 +141,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p>Para denegar un préstamo, cambia el estado a 'Denegado'. Para aceptar un préstamo, introduce los detalles y cambia el estado a 'Aceptado'.</p>
+                                <p>Para denegar un préstamo, cambia el estado a 'Denegado' e introduce la cuenta a la que se deniega el préstamo. Para aceptar un préstamo, introduce los detalles y cambia el estado a 'Aceptado'.</p>
                                 <!-- Agrega aquí los campos adicionales necesarios para aceptar un préstamo -->
                             </div>
                             <div class="modal-footer">

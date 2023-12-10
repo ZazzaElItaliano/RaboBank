@@ -8,6 +8,7 @@ $asunto=$_POST["asunto"];
 $cantidadFormat=floatval($cantidadPedida);
 
 
+
 $obtenerID="SELECT id_cuenta FROM cuenta WHERE dni='$dni'";
 $sacarID=mysqli_query($conexion,$obtenerID);
 $idObtenido=mysqli_fetch_assoc($sacarID);
@@ -24,7 +25,7 @@ $fecha=mysqli_query($conexion,$consultaFecha);
 $fechaObtenida=mysqli_fetch_assoc($fecha);
 $almacenarFecha=$fechaObtenida['fecha_nac'];
 
-//calcular edad usuario 
+
 
 function calcularEdad($almacenarFecha)
 {
@@ -40,7 +41,7 @@ function calcularEdad($almacenarFecha)
 
     return $edad;
 }
-
+$fechaActual = date('Y-m-d');
 $edad=calcularEdad($almacenarFecha);
 
 //sABER SI TIENE EL 15% DE LO Q PIDE EN CUENTA
@@ -58,7 +59,7 @@ if($edad>18 && $saldoUsuario>=$porcentajeSaldo && $prestamosPendientes==0){
 
 
         $estadoDefecto="pendiente";    
-        $insertarSolicitud="INSERT INTO prestamos (estado,concepto,cantidad, id_cuenta) VALUES ('$estadoDefecto','$asunto','$cantidadPedida','$almacenarId')";
+        $insertarSolicitud="INSERT INTO prestamos (estado,concepto,cantidad,fecha_creacion, id_cuenta) VALUES ('$estadoDefecto','$asunto','$cantidadPedida','$fechaActual','$almacenarId')";
         $ejecutarSolicitud=mysqli_query($conexion,$insertarSolicitud);
         if ($ejecutarSolicitud) {
             echo '

@@ -18,9 +18,9 @@
                     Menú
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="perfil.php">Ver Perfil</a></li>
+                    <li class="list-group-item"><a href="estadoPrestamos.php">Estado Prestamos</a></li>
                     <!-- Agrega el enlace para la sección de préstamos -->
-                    <li class="list-group-item"><a href="#">Pedir Préstamo</a></li>
+                    <li class="list-group-item"><a href="pedirPrestamos.php">Pedir Préstamo</a></li>
                 </ul>
             </div>
         </div>
