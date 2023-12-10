@@ -31,8 +31,9 @@ id_prestamo int auto_increment primary key,
 estado varchar(20),
 concepto varchar(50),
 cantidad float,
-interes varchar(50),
-plazo varchar(50),
+interes float,
+mensualidad float,
+plazo date,
 id_cuenta int,
 foreign key (id_cuenta) references  cuenta(id_cuenta)
 );
@@ -59,5 +60,5 @@ foreign key (dni) references  usuario(dni)
 select * from usuario;
 select * from cuenta;
 insert into usuario (nombre,dni,contrasena) values ('admin', '111111111Q','admin');
-
+select * from prestamos;
 select* from movimiento;
