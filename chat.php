@@ -1,3 +1,6 @@
+<?php  include("Consultas/mostrarMensaje.php");    ?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,14 +9,9 @@
   <title>Chat con Bootstrap</title>
   <!-- Agrega los enlaces a las hojas de estilo de Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/seccionPerfil.css">
   <!-- Tu propia hoja de estilo personalizada, si es necesario -->
-  <style>
-    /* Estilos personalizados aquí */
-    #chat-box {
-      height: 300px;
-      overflow-y: scroll;
-    }
-  </style>
+  
 </head>
 <body>
 
@@ -26,13 +24,20 @@
         </div>
         <div class="card-body" id="chat-box">
           <!-- Aquí se mostrarán los mensajes del chat -->
+          <?php while ($mostrarMensaje = mysqli_fetch_assoc($ejecucion1)) { ?>
+    <p><?php echo $mostrarMensaje['mensaje']; ?></p>
+  <?php } ?>
         </div>
         <div class="card-footer">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Escribe tu mensaje...">
-            <div class="input-group-append">
-              <button class="btn btn-primary">Enviar</button>
-            </div>
+          <form  action="Consultas\guardarMensaje.php" method="post">
+              <div class="input-group">
+                <input type="text" class="form-control" name="mensaje" placeholder="Escribe tu mensaje..." required>
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

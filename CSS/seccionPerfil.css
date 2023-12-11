@@ -1,7 +1,5 @@
-*{
-    background-color: aquamarine;
-}
 
-body{
-    background-color: blue;
-}
+#chat-box {
+    height: 300px;
+    overflow-y: scroll;
+  }

@@ -30,14 +30,14 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0  me-2">
                                 <li class="nav-item me-4">
-                                    <a class="nav-link active text-white" aria-current="page" href="index.html">Datos usuarios
+                                    <a class="nav-link active text-white" aria-current="page" href="paginaAdmin.php">Datos usuarios
                                     </a>
                                 </li>
                                 <li class="nav-item me-4">
                                     <a class="nav-link text-white" href="gallery.html">Préstamos</a>
                                 </li>
                                 <li class="nav-item me-4">
-                                    <a class="nav-link text-white " aria-current="page" href="us.html" aria-expanded="false">
+                                    <a class="nav-link text-white " aria-current="page" href="chatAdmin.php" aria-expanded="false">
                                         Chat
                                     </a>
 

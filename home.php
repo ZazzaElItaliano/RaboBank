@@ -90,7 +90,7 @@ include("Consultas/noEvadirLogin.php");
             <a href="cajeroAutomatico.php"><ion-icon name="card-outline"></ion-icon></a>
             </li>
             <li  style="--i:2;--clr:#04fc43;">
-            <a><ion-icon name="chatbubbles-outline"></ion-icon></a>
+            <a href="chat.php"><ion-icon name="chatbubbles-outline"></ion-icon></a>
             </li>
             <li  style="--i:3;--clr:#fe00f1;">
             <a href="pedirPrestamo.php"><ion-icon name="cash-outline"></ion-icon></a>
