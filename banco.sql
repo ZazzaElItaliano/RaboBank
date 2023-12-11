@@ -31,9 +31,11 @@ id_prestamo int auto_increment primary key,
 estado varchar(20),
 concepto varchar(50),
 cantidad float,
+cantidad_pagar float,
 interes float,
 mensualidad float,
 plazo date,
+fecha_creacion date,
 id_cuenta int,
 foreign key (id_cuenta) references  cuenta(id_cuenta)
 );

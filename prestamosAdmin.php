@@ -88,10 +88,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <!-- Campos del primer formulario -->
-                                        <div class="mb-3">
-                                            <label class="form-label">Interés</label>
-                                            <input type="number" step="0.01" class="form-control" name="interes">
-                                        </div>
+                                       
 
                                         <div class="mb-3">
                                             <label class="form-label">Cantidad Mensual </label>

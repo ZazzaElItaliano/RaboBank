@@ -29,6 +29,7 @@
                     <li class="list-group-item"><a href="estadoPrestamos.php">Estado Prestamos</a></li>
                     <!-- Agrega el enlace para la sección de préstamos -->
                     <li class="list-group-item"><a href="pedirPrestamos.php">Pedir Préstamo</a></li>
+                    <li class="list-group-item"><a href="pagarPrestamos.php">Pagar Préstamos</a></li>
                 </ul>
             </div>
         </div>
@@ -40,17 +41,19 @@
                 <table class="mx-auto align-middle border table-responsive-sm table-responsive-lg">
                     <thead class="bg-light">
                         <tr>
-                            <th class="p-2">ESTADO</th>
+                            <th class="p-2">IDENTIFICADOR</th>
+                            <th>ESTADO</th>
                             <th>CONCEPTO</th>
                             <th>CANTIDAD</th>
                             <th>PLAZO</th>
-                            <th>FECHA DE CREACIÓN</th>
+                            <th>FECHA SOLICITUD</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php while ($mostrarPrestamos = mysqli_fetch_assoc($ejecutarConsulta)) { ?>
                             <tr>
-                                <td class="p-2"><?php echo $mostrarPrestamos['estado']; ?></td>
+                                <td class="p-2"><?php echo $mostrarPrestamos['id_prestamo']; ?></td>
+                                <td><?php echo $mostrarPrestamos['estado']; ?></td>
                                 <td><?php echo $mostrarPrestamos['concepto']; ?></td>
                                 <td><?php echo $mostrarPrestamos['cantidad']; ?></td>
                                 <td><?php echo $mostrarPrestamos['plazo']; ?></td>

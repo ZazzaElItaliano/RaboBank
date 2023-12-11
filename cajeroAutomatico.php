@@ -1,5 +1,6 @@
 
-<?php  include("Consultas/mostrarSaldo.php") ?>
+
+<?php include("Consultas/mostrarSaldo.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

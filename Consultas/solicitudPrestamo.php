@@ -7,7 +7,7 @@ $cantidadPedida=$_POST["cantidad"];
 $asunto=$_POST["asunto"];
 $cantidadFormat=floatval($cantidadPedida);
 
-
+$cantidadPagar=($cantidadFormat*10)/100 + $cantidadFormat;
 
 $obtenerID="SELECT id_cuenta FROM cuenta WHERE dni='$dni'";
 $sacarID=mysqli_query($conexion,$obtenerID);
@@ -59,7 +59,7 @@ if($edad>18 && $saldoUsuario>=$porcentajeSaldo && $prestamosPendientes==0){
 
 
         $estadoDefecto="pendiente";    
-        $insertarSolicitud="INSERT INTO prestamos (estado,concepto,cantidad,fecha_creacion, id_cuenta) VALUES ('$estadoDefecto','$asunto','$cantidadPedida','$fechaActual','$almacenarId')";
+        $insertarSolicitud="INSERT INTO prestamos (estado,concepto,cantidad,cantidad_pagar,fecha_creacion, id_cuenta) VALUES ('$estadoDefecto','$asunto','$cantidadPedida','$cantidadPagar','$fechaActual','$almacenarId')";
         $ejecutarSolicitud=mysqli_query($conexion,$insertarSolicitud);
         if ($ejecutarSolicitud) {
             echo '
@@ -80,7 +80,7 @@ if($edad>18 && $saldoUsuario>=$porcentajeSaldo && $prestamosPendientes==0){
 
 
 
-
+    
 
 
 

@@ -12,10 +12,29 @@ $ejecutar=mysqli_query($conexion, $consultaSaldo);
 $guardar=mysqli_fetch_assoc($ejecutar);
  $saldoUsuario=$guardar['saldo'];
 
-$saldoFinal=(float)$saldoUsuario+(float)$cantidad;
+ $obtenerID="SELECT id_cuenta FROM cuenta WHERE dni='$dni'";
+$sacarID=mysqli_query($conexion,$obtenerID);
+$idObtenido=mysqli_fetch_assoc($sacarID);
+$almacenarId=$idObtenido['id_cuenta'];
 
-$actSaldo="UPDATE cuenta SET saldo='$saldoFinal' WHERE dni='$dni'";
-$ejecutar2=mysqli_query($conexion, $actSaldo);
+
+
+
+
+
+
+
+
+
+
+    $saldoFinal=(float)$saldoUsuario+(float)$cantidad;
+    $actSaldo="UPDATE cuenta SET saldo='$saldoFinal' WHERE dni='$dni'";
+    $ejecutar2=mysqli_query($conexion, $actSaldo);
+
+
+
+
+
 
 
 

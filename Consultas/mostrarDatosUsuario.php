@@ -1,4 +1,5 @@
 <?php 
+
 include("conexion.php");
 $dni = $_SESSION['dni']; 
 

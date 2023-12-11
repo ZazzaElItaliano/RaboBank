@@ -21,3 +21,8 @@
 .titulo-saldo {
     margin-bottom: 70px;
 }
+
+.table {
+    overflow-y: auto;
+}
+

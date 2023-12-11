@@ -21,6 +21,7 @@
                     <li class="list-group-item"><a href="estadoPrestamos.php">Estado Prestamos</a></li>
                     <!-- Agrega el enlace para la sección de préstamos -->
                     <li class="list-group-item"><a href="pedirPrestamos.php">Pedir Préstamo</a></li>
+                    <li class="list-group-item"><a href="pagarPrestamos.php">Pagar Préstamos</a></li>
                 </ul>
             </div>
         </div>
