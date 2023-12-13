@@ -1,0 +1,19 @@
+.saldo-container {
+  background-color: #00ffdd;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.saldo-container .titulo-saldo {
+  margin-bottom: 40px;
+}
+.saldo-container .saldo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(26, 29, 29);
+}
+.saldo-container .botones-container {
+  margin-bottom: 20px;
+}

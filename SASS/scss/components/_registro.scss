@@ -1,0 +1,163 @@
+// Variables
+$primary-color: rgb(0, 255, 255);
+$secondary-color: rgb(76, 237, 165);
+$accent-color: rgb(43, 226, 211);
+$highlight-color: rgba(0, 255, 234, 0.987);
+
+$base-background: rgba(20, 246, 209, 0.22);
+$base-box-shadow: 12px 10px 12px 9px rgb(5, 231, 243);
+$base-border: 1px solid rgba(20, 246, 209, 1);
+
+// Mixin para estilos de borde
+@mixin border-styles($width, $style, $color) {
+  border: $width $style $color;
+}
+
+// Mixin para estilos de fondo
+@mixin background-styles($color, $filter) {
+  background-color: $color;
+  backdrop-filter: blur($filter);
+}
+
+// Estilos
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.envoltorio {
+  width: 750px;
+  @include background-styles($base-background, 8.2px);
+  border: $base-border;
+  box-shadow: $base-box-shadow;
+  border-radius: 2em;
+  color: white;
+  padding: 40px 35px 55px;
+  margin: 0 auto;
+  transition: 0.6s ease;
+
+  &:hover {
+    @include background-styles(rgba(25, 44, 44, 0.236), 25px);
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .formulario-caja {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .formulario-caja .formulario-campos {
+    position: relative;
+    width: calc(48% - 10px);
+    height: 50px;
+    margin: 13px 0;
+
+    input {
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border: 4px solid $primary-color;
+      outline: none;
+      font-size: 18px;
+      font-weight: 400;
+      color: white;
+      border-radius: 40px;
+      padding: 15px 15px 15px 40px;
+
+      &::placeholder {
+        color: $highlight-color;
+      }
+    }
+
+    i {
+      position: absolute;
+      right: 20px;
+      top: 30%;
+      transform: translateY(-50%);
+      font-size: 20px;
+    }
+
+    input:hover {
+      background-color: rgba(127, 255, 212, 0.537);
+      border: 2px solid $accent-color;
+    }
+  }
+
+  label {
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0 23px;
+  }
+
+  .boton-registro {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.915);
+    border-width: 2.5px;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0px 0px 18px 2px rgba(0, 255, 187, 0.468);
+    font-size: 16px;
+    color: rgb(35, 30, 30);
+    font-weight: 640;
+
+    &:hover {
+      background-color: rgba(127, 255, 212, 0.537);
+      color: rgb(135, 66, 66);
+      @include border-styles(2px, solid, $accent-color);
+    }
+  }
+
+  input {
+    transition: 0.3s ease;
+  }
+}
+
+#cuenta {
+  color: $secondary-color;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+@media (max-width: 576px) {
+  .formulario-caja .formulario-campos {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.acceso {
+  color: rgb(0, 247, 255);
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
