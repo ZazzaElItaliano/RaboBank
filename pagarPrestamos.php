@@ -39,7 +39,7 @@
     </div>
 
     <h1 class="mt-5 mb-5 text-center"> TUS PRESTAMOS A DEVOLVER</h1>
-
+    <p class="text-center"> los préstamos tienen un 10% de interés aplicado</p>
     <div class="container table table-hover row mx-auto table-container">
                 <table class="mx-auto align-middle border table-responsive-sm table-responsive-lg">
                     <thead class="bg-light">

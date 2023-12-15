@@ -80,7 +80,7 @@ include("Consultas/noEvadirLogin.php");
 
 
     <section class="seccion3">
-      <div class="hola"><h1>holaaaa</h1></div>
+     
         <ul class="menu">
             <div class="boton"><ion-icon name="add-outline"></ion-icon></div>
             <li style="--i:0;--clr:#ff2972;">

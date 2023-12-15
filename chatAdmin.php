@@ -54,22 +54,7 @@
 </header>
 <main>
 <div class="container mt-5">
-    <div class="row">
-        <div class="col-md-3">
-            <!-- Menú lateral -->
-            <div class="card">
-                <div class="card-header">
-                    Menú
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="chatAdmin.php">NOTIFIACCIONES MENSAJE</a></li>
-                    
-                    <li class="list-group-item"><a href="verMensajesAdmin.php">VER MENSAJE USUARIO </a></li>
-                   
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-9">
+    
   <div class="container mt-5">
     <div class="card">
       <div class="card-header bg-primary text-white">

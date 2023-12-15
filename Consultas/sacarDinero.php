@@ -5,7 +5,7 @@ $dni = $_SESSION['dni'];
 
 $cantidad=$_POST['cantidadRetiro'];
 $cantidadFormat=floatval($cantidad);
-
+$asunto=$_POST['asuntoRetiro'];
 
 $consultaSaldo="SELECT saldo FROM cuenta WHERE dni='$dni'";
 $ejecutar=mysqli_query($conexion, $consultaSaldo);
