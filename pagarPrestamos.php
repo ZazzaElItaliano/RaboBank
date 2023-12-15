@@ -4,8 +4,8 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
+<link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.css" integrity="sha384" crossorigin="anonymous">
@@ -23,16 +23,17 @@
   <div class="container mt-5">
     <div class="row">
         <div class="col-md-3">
-            <!-- Menú lateral -->
+           
             <div class="card">
                 <div class="card-header">
                     Menú
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="estadoPrestamos.php">Estado Prestamos</a></li>
-                    <!-- Agrega el enlace para la sección de préstamos -->
-                    <li class="list-group-item"><a href="pedirPrestamo.php">Pedir Préstamo</a></li>
-                    <li class="list-group-item"><a href="pagarPrestamos.php">Pagar Préstamos</a></li>
+                    <li class="list-group-item"><a href="estadoPrestamos.php">Estado prestamos</a></li>
+                  
+                    <li class="list-group-item"><a href="pedirPrestamo.php">Pedir préstamo</a></li>
+                    <li class="list-group-item"><a href="pagarPrestamos.php">Pagar préstamos</a></li>
+                    <li class="list-group-item"><a href="home.php">Volver al menú principal</a></li>
                 </ul>
             </div>
         </div>
@@ -67,26 +68,26 @@
                 </table>
             </div>
             <div class="container table table-hover row mx-auto table-container">
-    <!-- Contenido de la tabla -->
+   
     <table class="mx-auto align-middle border table-responsive-sm table-responsive-lg">
-        <!-- Estructura de tu tabla -->
+       
     </table>
 </div>
 <div class="container card mt-4 text-center" style="max-width: 400px;">
     <div class="card-body">
-        <h5 class="card-title">Pagar Préstamo</h5>
+        <h5 class="card-title">Pagar préstamo</h5>
         <form action="Consultas/pagarPrestamos.php" method="post">
             <div class="form-row justify-content-center">
                 <div class="form-group col-sm-8 mb-2">
-                    <label  class="sr-only">Identificador Préstamo:</label>
+                    <label  class="sr-only">Identificador préstamo:</label>
                     <input type="number" class="form-control form-control-sm"  name="identificadorPrestamo" placeholder="ID" required>
                 </div>
                 <div class="form-group col-sm-8 mb-2">
-                    <label  class="sr-only">Cantidad a Devolver:</label>
+                    <label  class="sr-only">Cantidad a devolver:</label>
                     <input type="number" class="form-control form-control-sm" step="0.01" name="cantidadDevolver" placeholder="Cantidad" required>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-sm">Pagar Préstamo</button>
+            <button type="submit" class="btn btn-primary btn-sm">Pagar préstamo</button>
         </form>
     </div>
 </div>

@@ -9,7 +9,7 @@ $contrasena=$_POST['contrasena'];
 
 
 
-if($dni=="111111111Q" && $contrasena=="admin"){
+if($dni=="11111111Q" && $contrasena=="admin"){
     $_SESSION['dni']=$dni;
     header("location:../paginaAdmin.php");
     exit;

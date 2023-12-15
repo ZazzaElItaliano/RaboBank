@@ -4,7 +4,8 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+<link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,7 +35,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item me-4">
-                                    <a class="nav-link text-white" href="gallery.html">Préstamos</a>
+                                    <a class="nav-link text-white" href="prestamosAdmin.php">Préstamos</a>
                                 </li>
                                 <li class="nav-item me-4">
                                     <a class="nav-link text-white " aria-current="page" href="chatAdmin.php" aria-expanded="false">
@@ -129,7 +130,7 @@
                     </div>
                 </div>
 
-                <!-- Modal para modificar estado -->
+               
                 <div class="modal fade" id="modalModificarEstado" tabindex="-1" aria-labelledby="modalModificarEstadoLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -139,7 +140,7 @@
                             </div>
                             <div class="modal-body">
                                 <p>Para denegar un préstamo, cambia el estado a 'Denegado' e introduce la cuenta a la que se deniega el préstamo. Para aceptar un préstamo, introduce los detalles y cambia el estado a 'Aceptado'.</p>
-                                <!-- Agrega aquí los campos adicionales necesarios para aceptar un préstamo -->
+                                
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -164,6 +165,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>

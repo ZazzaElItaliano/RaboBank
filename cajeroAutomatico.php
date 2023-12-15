@@ -6,7 +6,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco</title>
+    <link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/css/styles.css">
 </head>
@@ -14,7 +15,7 @@
 
 <div class="container mt-5">
     <div class="row">
-        <!-- Menú lateral -->
+      
         <div class="col-md-3">
     <div class="list-group">
         <a href="mostrarMov.php" class="list-group-item list-group-item-action">Ver Movimientos</a>
@@ -22,7 +23,7 @@
     </div>
 </div>
     
-        <!-- Contenido principal -->
+      
         <div class="col-md-9">
             <div class="saldo-container">
                 <h2 class="titulo-saldo">Resumen del Saldo</h2>
@@ -36,18 +37,18 @@
         </div>
     </div>
 </div>
-<!-- Modal para ingresar dinero -->
+
 <div class="modal" id="ingresoModal">
     <div class="modal-dialog">
         <div class="modal-content">
 
-            <!-- Modal Header -->
+          
             <div class="modal-header">
                 <h4 class="modal-title">Ingresar Dinero</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
-            <!-- Modal Body -->
+          
             <div class="modal-body">
                 <form action="Consultas/meterDinero.php" method="post">
                    
@@ -67,7 +68,7 @@
                 </form>
             </div>
 
-            <!-- Modal Footer -->
+          
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             </div>
@@ -75,7 +76,7 @@
         </div>
     </div>
 </div>
-<!-- Modal para retirar dinero -->
+
 <div class="modal" id="retiroModal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -85,7 +86,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
-            <!-- Cuerpo del Modal -->
+           
             <div class="modal-body">
                 <form action="Consultas/sacarDinero.php" method="post">
                     

@@ -2,8 +2,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+    <link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -39,7 +39,7 @@
                             </a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link text-white" href="gallery.html">Préstamos</a>
+                            <a class="nav-link text-white" href="prestamosAdmin.php">Préstamos</a>
                         </li>
                         <li class="nav-item me-4">
                             <a class="nav-link text-white " aria-current="page" href="chatAdmin.php" aria-expanded="false">
@@ -75,7 +75,7 @@
                     <th>PAÍS</th>
                     <th>CIUDAD</th>
                     <th>CÓDIGO POSTAL</th>
-                    <th>CONTRASEÑA</th>
+                    <th>TELÉFONO</th>
                 </tr>
             </thead>
             <tbody>
@@ -87,11 +87,11 @@
                         <td><?php echo $datos['dni']; ?></td>
                         <td><?php echo $datos['fecha_nac']; ?></td>
                         <td><?php echo $datos['direccion']; ?></td>
-                        <td><?php echo $datos['direccion']; ?></td>
                         <td><?php echo $datos['provincia']; ?></td>
                         <td><?php echo $datos['pais']; ?></td>
                         <td><?php echo $datos['ciudad']; ?></td>
                         <td><?php echo $datos['codigo_postal']; ?></td>
+                        
                         <td><?php echo $datos['telefono']; ?></td>
 
                     </tr>
@@ -109,7 +109,7 @@
                     <th class="p-2">ID CUENTA</th>
                     <th>SALDO</th>
                     <th>IBAN</th>
-                    
+                    <th>DNI</th>
                    
                 </tr>
             </thead>
@@ -169,7 +169,7 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
   </script>
      <script src="https://unpkg.com/simplebar@5.3.0/dist/simplebar.min.js" integrity="sha384-..tu código de integridad.." crossorigin="anonymous"></script>
-     <script src="JS/subirBajarTabla.js"> </script>
+    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
   </script>

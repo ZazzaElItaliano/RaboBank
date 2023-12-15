@@ -22,12 +22,12 @@ if ($cantidad > $cantFinal) {
     $consultoria = mysqli_query($conexion, $actPrestamo);
 
     if ($cantFinalAct <= 0) {
-        // Si la cantidad final es menor o igual a cero, eliminar el préstamo
+      
         $eliminarPrestamo = "DELETE FROM prestamos WHERE id_prestamo='$id'";
         $consultaEliminar = mysqli_query($conexion, $eliminarPrestamo);
 
         if ($consultaEliminar) {
-            // Actualizar el saldo después de pagar el préstamo
+    
             $obtenerSaldo = "SELECT saldo FROM cuenta WHERE dni='$dni'";
             $consultaSaldo = mysqli_query($conexion, $obtenerSaldo);
             $arraySaldo = mysqli_fetch_assoc($consultaSaldo);

@@ -64,3 +64,5 @@ select * from cuenta;
 insert into usuario (nombre,dni,contrasena) values ('admin', '111111111Q','admin');
 select * from prestamos;
 select* from movimiento;
+select * from chat;
+SELECT id_prestamo, concepto, cantidad, cantidad_pagar, mensualidad, plazo FROM prestamos WHERE id_cuenta=1 AND estado='aceptado';

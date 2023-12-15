@@ -13,13 +13,13 @@ $base-border: 1px solid rgba(20, 246, 209, 1);
   border: $width $style $color;
 }
 
-// Mixin para estilos de fondo
+
 @mixin background-styles($color, $filter) {
   background-color: $color;
   backdrop-filter: blur($filter);
 }
 
-// Estilos
+
 * {
   margin: 0;
   padding: 0;

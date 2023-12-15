@@ -7,7 +7,8 @@ include("Consultas/verMensajesUsuarios.php");
 <html lang="en">
 
 <head>
-  <title>Title</title>
+<link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,16 +20,59 @@ include("Consultas/verMensajesUsuarios.php");
 </head>
 
 <body>
-  <header>
-    <!-- place navbar here -->
-  </header>
+<header class="bg-warning">
+
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid ">
+
+                <img src="fotos/LOGODEF.svg" alt="logo" height="130">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0  me-2">
+                        <li class="nav-item me-4">
+                            <a class="nav-link active text-white" aria-current="page" href="paginaAdmin.php">Datos usuarios
+                            </a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-white" href="prestamosAdmin.php">Préstamos</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-white " aria-current="page" href="chatAdmin.php" aria-expanded="false">
+                                Chat
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+</header>
   <main>
+<h1 class="mt-5 display-2 text-center"> BANCORABO CHAT</h1>
+ <div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header bg-warning">
+          Chat con usuario: 
+        </div>
+        <div class="card-body " id="chat-box">
 <?php
 foreach($mensajes as $mensaje){
     echo "<p class='text-center'>$mensaje</p>";
 }
 ?>
-  <div class="card-footer">
+ </div>
+        <div class="card-footer bg-warning">
           <div class="input-group">
           <form  action="Consultas\guardarMensaje.php" method="post">
               <div class="input-group">
@@ -40,7 +84,10 @@ foreach($mensajes as $mensaje){
             </form>
           </div>
         </div>
-
+      </div>
+    </div>
+  </div>
+</div>
 
   </main>
   <footer>

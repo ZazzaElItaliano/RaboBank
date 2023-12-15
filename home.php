@@ -7,7 +7,8 @@ include("Consultas/noEvadirLogin.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
     <link rel="stylesheet" href="CSS/estilosHOME.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@ include("Consultas/noEvadirLogin.php");
             <script src="JS/fecha.js"> </script>
         </div>
         <div class="logoBanco">
-        <?php include("Consultas/foto_defecto.php") ?>
+        <img  src="fotos/LOGODEF.svg"  >
         </div>
     </section>
 

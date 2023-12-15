@@ -48,7 +48,7 @@ $edad=calcularEdad($almacenarFecha);
 
 $porcentajeSaldo= $cantidadFormat*0.15;
 
-//Comprobar si tiene algun prestamo pendiente 
+
 
 $consultaPrestamosPendientes = "SELECT COUNT(*) as cantidad FROM prestamos WHERE id_cuenta='$almacenarId' AND estado='pendiente'";
 $resultadoPrestamosPendientes = mysqli_query($conexion, $consultaPrestamosPendientes);

@@ -47,5 +47,6 @@
 
 
     </div>
+    <script src="JS/validacionRegistro.js"></script>
 </body>
 </html>

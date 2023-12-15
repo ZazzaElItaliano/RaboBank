@@ -118,11 +118,11 @@ if(mysqli_num_rows($consultaTFL)>0){
 
 
 
-//meter datos del registro del usuario
+
 $meterdatos= "INSERT INTO usuario (nombre,apellido,email,dni,fecha_nac,direccion,provincia,pais,ciudad,codigo_postal,contrasena,telefono) VALUES ('$nombre','$apellido','$email','$dni','$fechaNac','$direccion','$provincia','$pais','$ciudad','$cp','$contrasena_encriptada','$telefono')";
 $resultado = mysqli_query( $conexion, $meterdatos ) or die ( "Algo ha ido mal en la consulta a la base de datos");
 
-//crear cuenta bancaria
+
 $crearCuenta="INSERT INTO cuenta (saldo, iban, dni) VALUES (0, '$iban2', '$dni')";
 $resultadoCuenta = mysqli_query($conexion, $crearCuenta) or die("Error al insertar cuenta: " . mysqli_error($conexion));
 

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Perfil de Usuario</title>
+    <link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
@@ -12,46 +13,44 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-3">
-            <!-- Menú lateral -->
+          
             <div class="card">
                 <div class="card-header">
                     Menú
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="estadoPrestamos.php">Estado Prestamos</a></li>
+                    <li class="list-group-item"><a href="estadoPrestamos.php">Estado prestamos</a></li>
                     <!-- Agrega el enlace para la sección de préstamos -->
-                    <li class="list-group-item"><a href="pedirPrestamos.php">Pedir Préstamo</a></li>
-                    <li class="list-group-item"><a href="pagarPrestamos.php">Pagar Préstamos</a></li>
+                    <li class="list-group-item"><a href="pedirPrestamo.php">Pedir préstamo</a></li>
+                    <li class="list-group-item"><a href="pagarPrestamos.php">Pagar préstamos</a></li>
+                    <li class="list-group-item"><a href="home.php">Volver al menú principal</a></li>
                 </ul>
             </div>
         </div>
         <div class="col-md-9">
-            <!-- Contenido principal -->
-         
             
-            <!-- Sección de Préstamos -->
             <div class="card mt-3">
                 <div class="card-header">
-                    <h4>Solicitud de Préstamo</h4>
+                    <h4>Solicitud de préstamo</h4>
                 </div>
                 <div class="card-body">
                     <form action="Consultas/solicitudPrestamo.php" method="post">
-                        <!-- Formulario de Préstamo -->
+                     
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="asunto">Asunto del Préstamo:</label>
+                                <label for="asunto">Asunto del préstamo:</label>
                                 <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Ej. Compra de automóvil" required>
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-6">
-                                <label for="cantidad">Cantidad del Préstamo:</label>
-                                <input type="number" class="form-control" id="cantidad" name="cantidad" placeholder="Ej. 10000" required>
+                                <label for="cantidad">Cantidad del préstamo:</label>
+                                <input type="number" class="form-control" id="cantidad" name="cantidad" step="0.01" placeholder="Ej. 10000" required>
                             </div>
                         </div>
 
-                        <!-- Botones de Pedir Préstamo y Requisitos Préstamo -->
+                       
                         <div class="form-row mt-3">
                             <div class="col-md-3">
                                 <button type="submit" class="btn btn-primary btn-sm btn-block">Pedir Préstamo</button>
@@ -72,7 +71,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="requisitosModalLabel">Requisitos para el Préstamo</h5>
+        <h5 class="modal-title" id="requisitosModalLabel">Requisitos para el préstamo</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
           <span aria-hidden="true">&times;</span>
         </button>

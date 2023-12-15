@@ -4,8 +4,8 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
+<link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -35,7 +35,7 @@
                             </a>
                         </li>
                         <li class="nav-item me-4">
-                            <a class="nav-link text-white" href="gallery.html">Préstamos</a>
+                            <a class="nav-link text-white" href="prestamosAdmin.php">Préstamos</a>
                         </li>
                         <li class="nav-item me-4">
                             <a class="nav-link text-white " aria-current="page" href="chatAdmin.php" aria-expanded="false">

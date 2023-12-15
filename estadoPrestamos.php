@@ -4,8 +4,8 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
+<link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,10 +26,11 @@
                     Menú
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="estadoPrestamos.php">Estado Prestamos</a></li>
+                    <li class="list-group-item"><a href="estadoPrestamos.php">Estado prestamos</a></li>
                     <!-- Agrega el enlace para la sección de préstamos -->
-                    <li class="list-group-item"><a href="pedirPrestamos.php">Pedir Préstamo</a></li>
-                    <li class="list-group-item"><a href="pagarPrestamos.php">Pagar Préstamos</a></li>
+                    <li class="list-group-item"><a href="pedirPrestamo.php">Pedir préstamo</a></li>
+                    <li class="list-group-item"><a href="pagarPrestamos.php">Pagar préstamos</a></li>
+                    <li class="list-group-item"><a href="home.php">Volver al menú principal</a></li>
                 </ul>
             </div>
         </div>
@@ -45,7 +46,7 @@
                             <th>ESTADO</th>
                             <th>CONCEPTO</th>
                             <th>CANTIDAD</th>
-                            <th>PLAZO</th>
+                          
                             <th>FECHA SOLICITUD</th>
                         </tr>
                     </thead>
@@ -56,7 +57,7 @@
                                 <td><?php echo $mostrarPrestamos['estado']; ?></td>
                                 <td><?php echo $mostrarPrestamos['concepto']; ?></td>
                                 <td><?php echo $mostrarPrestamos['cantidad']; ?></td>
-                                <td><?php echo $mostrarPrestamos['plazo']; ?></td>
+                                
                                 <td><?php echo $mostrarPrestamos['fecha_creacion']; ?></td>
                             </tr>
                         <?php } ?>

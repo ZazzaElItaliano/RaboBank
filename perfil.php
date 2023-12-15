@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de Usuario</title>
@@ -26,7 +28,7 @@
             </div>
         </div>
         <div class="col-md-9">
-            <!-- Contenido principal -->
+          
             <div class="card">
                 <div class="card-header">
                     <h4>Datos Personales</h4>

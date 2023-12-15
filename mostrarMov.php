@@ -5,8 +5,8 @@ include("Consultas/obtenerMovimientos.php");
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Tablas</title>
-    <!-- Required meta tags -->
+<link rel="icon" href="fotos\LOGODEF.svg" type="image/x-icon">
+    <title>BancoRabo-login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,6 +22,8 @@ include("Consultas/obtenerMovimientos.php");
 </head>
 
 <body>
+
+
     <header>
         <p class="display-1 text-center"><strong>TUS MOVIMIENTOS</strong></p>
     </header>

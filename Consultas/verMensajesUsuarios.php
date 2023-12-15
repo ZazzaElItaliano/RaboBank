@@ -14,5 +14,4 @@ while ($array=mysqli_fetch_assoc($ejecutar)) {
 }
 
 
-
 ?>
